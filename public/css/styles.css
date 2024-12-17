@@ -1,0 +1,348 @@
+body{
+    /* background-color: #111111; */
+    background-color: black;
+    margin-top: 1%;
+}
+#header{
+    margin: 0 5%;
+}
+
+.navColor{
+    text-decoration: none;
+    color: white;
+    
+}
+.navColor:hover{
+    color: grey;
+}
+
+.navButton{
+    padding: 1px 8px 1px 8px;
+}
+
+/* .heroBackground{
+    margin-right: 5%;
+    margin-left: 5%;
+    height: 300px;
+} */
+.hero{
+    margin-top: 1%;
+    margin-bottom: 6%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.carouselBtn{
+    position: absolute;
+    top: 75%;
+    left: 4%;
+}
+
+.letsTalkBtn{
+    /* background-color: #FFFFFF; */
+    background-color:white;
+    color: black;
+}
+
+
+
+/* Footer Section */
+footer{
+    /* background-color: #111111; */
+    padding-top: 3%;
+    margin-left: 5%;
+}
+.linkTitle{
+    color: burlywood;
+}
+
+.footerLinks{
+    margin: auto;
+    display: block;
+    font-size: small;
+}
+
+.footerLink{
+    text-decoration: none;
+    color:white;
+}
+.footerLink:hover{
+    text-decoration: none;
+    color:#6C757D;
+}
+.socialsLink:hover{
+    color: burlywood;
+
+}
+
+.footerIcons{
+    margin-left: 23px;
+}
+.footerIcon{
+    margin-bottom: 15px;
+}
+
+.footerText{
+    color: white;
+    text-align: center;
+}
+
+/* Service Section */
+
+.service{
+    margin: 7% 7%;
+    
+}
+.serviceNum{
+    color: white;
+    /* font-size:3em; */
+}
+
+.serviceText{
+    /* font-size: 1em; */
+    color:#6C757D;
+}
+.serviceSperator{
+    /* font-size: 3em; */
+    color:#6C757D; 
+}
+.serviceDisplay{
+    margin-top: 2%;
+}
+.serviceImg{
+    padding: 4px;
+
+    height: 30%;
+    /* width: 500px; */
+}
+.landscapeImg{
+    height: 100%;
+}
+
+
+
+/* Review Section */
+.review{
+color: white;
+/* #3C3D37 */
+background-color:#111111;
+/* background-color: #272829; */
+
+padding: 5%;
+/* padding-bottom: 1%; */
+/* margin-bottom: 8%; */
+height: fit-content;
+}
+
+.reviewImg{
+    /* border-radius: 50; */
+    clip-path: circle();
+    height: 5%;
+    
+}
+
+.reviewProf{
+    text-align: center
+}
+
+
+
+/* Contact Page */
+
+.contactUs{
+    margin: 1% 5%;
+    color: white;
+}
+
+.contactHeader{
+    text-align: center;
+
+}
+
+.contactContent{
+    /* color: burlywood; */
+    color: white;
+    text-align: center;
+    margin-top: 1% ;
+    margin-bottom: 5%;
+}
+
+.contactDetails{
+    margin-top: 5%;
+    color:azure;
+    font-size: small;
+    /* text-align: center; */
+}
+
+
+/* About Section */
+
+.about{
+  color: white;
+}
+
+/* .description{
+  background-color: #111111;
+  margin: 0 5%;
+} */
+
+.aboutHeader{
+  margin-bottom: 5%;
+}
+
+.aboutHeading{
+  text-align: center;
+}
+
+.statements{
+  background-color: #02404d;
+  margin-top: 5%;
+}
+
+.qualityControl{
+  padding-top: 5%;
+  background-color: #111111;
+  margin: 0 5%;
+  padding-bottom: 2%;
+
+}
+
+
+
+
+/* Interior-design Service Page */
+
+.interior-design{
+  color: white;
+}
+
+.designtContent{
+  margin: 0 5%;
+}
+
+
+
+/* Projects Section */
+
+.coomingSoon{
+  margin: 25% 0;
+}
+
+
+/* @media only screen and (min-width: 992px) {
+    #mainNav {
+      transition: background-color 0.2s;
+      transform: translate3d(0, 0, 0);
+      --backface-visibility: hidden;
+    }
+    #mainNav.is-fixed {
+      position: fixed;
+      top: -67px;
+      transition: transform 0.2s;
+      border-bottom: 1px solid #fff;
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+    #mainNav.is-fixed .navbar-brand {
+      color: #212529;
+    }
+    #mainNav.is-fixed .navbar-brand:focus,
+    #mainNav.is-fixed .navbar-brand:hover {
+      color: #0085a1;
+    }
+    #mainNav.is-fixed .navbar-nav > li.nav-item > a {
+      color: #212529;
+    }
+    #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus,
+    #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
+      color: #0085a1;
+    }
+    #mainNav.is-visible {
+      transform: translate3d(0, 100%, 0);
+    }
+  }
+
+header.masthead {
+    margin-bottom: 50px;
+    background: no-repeat center center;
+    background-color: #868e96;
+    background-attachment: scroll;
+    position: relative;
+    background-size: cover;
+  }
+  header.masthead .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #212529;
+    opacity: 0.5;
+  }
+  header.masthead .page-heading,
+  header.masthead .post-heading,
+  header.masthead .site-heading {
+    padding: 200px 0 150px;
+    color: #fff;
+  }
+  @media only screen and (min-width: 768px) {
+    header.masthead .page-heading,
+    header.masthead .post-heading,
+    header.masthead .site-heading {
+      padding: 200px 0;
+    }
+  }
+  header.masthead .page-heading,
+  header.masthead .site-heading {
+    text-align: center;
+  }
+  header.masthead .page-heading h1,
+  header.masthead .site-heading h1 {
+    font-size: 50px;
+    margin-top: 0;
+  }
+  header.masthead .page-heading .subheading,
+  header.masthead .site-heading .subheading {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.1;
+    display: block;
+    margin: 10px 0 0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  @media only screen and (min-width: 768px) {
+    header.masthead .page-heading h1,
+    header.masthead .site-heading h1 {
+      font-size: 80px;
+    }
+  }
+  header.masthead .post-heading h1 {
+    font-size: 35px;
+  }
+  header.masthead .post-heading .meta,
+  header.masthead .post-heading .subheading {
+    line-height: 1.1;
+    display: block;
+  }
+  header.masthead .post-heading .subheading {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 10px 0 30px;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  header.masthead .post-heading .meta {
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+    font-family: Lora, "Times New Roman", serif;
+  }
+  header.masthead .post-heading .meta a {
+    color: #fff;
+  }
+  @media only screen and (min-width: 768px) {
+    header.masthead .post-heading h1 {
+      font-size: 55px;
+    }
+    header.masthead .post-heading .subheading {
+      font-size: 30px;
+    }
+
+} */

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('header.html') %>
+<body>
+<!-- Page Header -->
+<section class="contactUs">
+        <% if (locals.message){%>
+    <div class="page-heading contactHeader">
+        <ul class="messages ps-0">
+            <!-- <div class="col-lg-8 col-md-10 mx-auto"> -->
+            <h6 class="alert alert-success "><%= message %> </h6>
+          <!-- </div> -->
+        </ul>
+    </div>
+      <%}else{%>
+
+    <!-- <div class="row justify-content-md-center">
+    <div class="col-md-10 col-12"> -->
+    <img class="w-100" src="images/contact/contact.jpg" alt="contact header">
+    <!-- </div>
+    </div> -->
+
+  <!-- Main Content -->
+  <h6 class=" contactContent">Want to get in touch? Fill out the form below to send us a message and we'll get back to you as soon as possible!</h6>
+
+  <div class="container ">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-10 mx-auto">
+    
+        <form method="POST" action="" name="sentMessage" id="contactForm" >
+          <!-- {%csrf_token%} -->
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Name</label>
+              <input type="text" name="name" class="form-control" placeholder="Your Name" id="name" required data-validation-required-message="Please enter your name.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Email Address</label>
+              <input type="email" name="email" class="form-control" placeholder="email@example.com" id="email" required data-validation-required-message="Please enter your email address.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+              <label>Phone Number</label>
+              <input type="tel" name="phone" class="form-control" placeholder="+234" id="phone" required data-validation-required-message="Please enter your phone number.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Message</label>
+              <textarea rows="5" name="message" class="form-control" placeholder="I have a job for you" id="message" required data-validation-required-message="Please enter a message."></textarea>
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <br>
+          <div id="success">
+          <button type="submit" class="btn btn-secondary" id="sendMessageButton">Send Message</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-md-center contactDetails">
+    <div class=" col-md-6 col-10 ps-0">
+        <div class="mail-us " id="contact-us">
+            <h3>You can also contact us via: </h3>
+            <p>&nbsp&nbsp&nbsp&nbsp<i class=" social-icon fas fa-envelope"></i> Email: cdera.services@gmail.com</p>
+            <p>&nbsp&nbsp&nbsp&nbsp<i class="fa fa-phone" aria-hidden="true"></i> Phone: +2347062690661 </p>
+            <p>&nbsp&nbsp&nbsp&nbsp<i class="fa fa-map-marker"></i> Address: 107 Old Aba Rd, Rumuobiakani, River State </p>
+        </div>
+    </div>
+
+        <div class="col-md-1 col-1">
+            <div class="footer-link2">
+            <h3 class="linkTitle">socials</h3>
+                <div class="footerIcons">
+                    <div class="facebook-icon footerIcon">
+                    <a class="footerLink socialsLink" href="#"><i class="fa-brands fa-facebook-f fa-lg"></i></a>
+                    </div>
+                    <div class="instagram-icon footerIcon">
+                    <a class="footerLink socialsLink" href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                    </div>
+                    <div class="whatsapp-icon footerIcon">
+                    <a class="footerLink socialsLink" href="#"><i class="fa-brands fa-whatsapp fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+    
+</div>
+
+  <hr>
+  <%}%>
+</section>
+</body>
+</html>
