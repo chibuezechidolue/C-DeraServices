@@ -21,25 +21,25 @@
             <div class="col-10"> -->
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner load-hidden">
-                  <div class="carousel-item active">
+                  <div class="carousel-item active " data-bs-interval="4000">
                     <img src="images/home/1.png" class="d-block w-100" alt="carousel image1">
-                    <div class="carouselBtn">
-                        <a href="/service/interior-design"><button type="button" class="btn btn-lg btn-warning">View Service</button></a>
-                        <a href="/contact-us"><button type="button" class="btn btn-lg btn-outline-secondary">Let's Talk</button></a>
+                    <div class="carouselBtn1">
+                        <a href="/service/interior-design"><button type="button" class="btn btn-lg btn-warning viewServiceBtn">View Service</button></a>
+                        <a href="/contact-us"><button type="button" class="btn btn-lg letsTalkBtn">Let's Talk</button></a>
                     </div>
                   </div>
-                  <div class="carousel-item ">
+                  <div class="carousel-item " data-bs-interval="4000">
                     <img src="images/home/2.png" class="d-block w-100" alt="carousel image2">
-                    <div class="carouselBtn">
-                        <a href="/service/furniture-design"><button type="button" class="btn btn-lg btn-warning">View Service</button></a>
+                    <div class="carouselBtn2">
+                        <a href="/service/furniture-design"><button type="button" class="btn btn-lg btn-warning viewServiceBtn">View Service</button></a>
                         <a href="/contact-us"><button type="button" class="btn letsTalkBtn btn-lg ">Let's Talk</button></a>
                     </div>
                   </div>
-                  <div class="carousel-item ">
+                  <div class="carousel-item " data-bs-interval="4000">
                     <img src="images/home/3.png" class="d-block w-100" alt="carousel image3">
-                    <div class="carouselBtn">
-                        <a href="/service/material-supply"><button type="button" class="btn btn-lg btn-warning">View Service</button></a>
-                        <a href="/contact-us"><button type="button" class="btn btn letsTalkBtn btn-lg">Let's Talk</button></a>
+                    <div class="carouselBtn3">
+                        <a href="/service/material-supply"><button type="button" class="btn btn-lg btn-warning viewServiceBtn">View Service</button></a>
+                        <a href="/contact-us"><button type="button" class="btn letsTalkBtn btn-lg">Let's Talk</button></a>
                     </div>
                   </div>
                 </div>
@@ -50,35 +50,38 @@
         </div>
     </section>
     <section class="service">
-        <div>
+        <div class="mt-5">
         <div class="row">
-        <div class="col-4">
+        <div class="col-4 px-0">
             <!-- <span class="display-5 serviceSperator">|</span> -->
             <span class="display-5 serviceNum">7+</span> <br> <span class="h6 serviceText">YEARS INCORPORATED</span>
         </div> 
-        <div class="col-4">
+        <div class="col-4 px-0">
             <span class="display-5 serviceSperator">|</span>
             <span class="display-5 serviceNum">128+</span> <br> <span class="h6 serviceText">COMPLETED PROJECT</span>
         </div>
-        <div class="col-4">
+        <div class="col-4 px-0">
             <span class="display-5 serviceSperator">|</span>
-            <span class="display-5 serviceNum">94+</span> <br> <span class="h6 serviceText">CLIENT REVIEW</span>
+            <span class="display-5 serviceNum">94+</span> <br> <span class="h6 serviceText">CLIENT REVIEWS</span>
         </div>
         </div>
             <div class="serviceDisplay">
             <div class="row ">
                 <div class="col-7 serviceImg">
-                    <a href=""><img class="d-block w-100 landscapeImg" src="images/home/interior-design.jpg" alt="interior-design"></a>
-                    <p class="serviceText">Transfer your vision of a dream home into reality with personalized design assistance and curated products perfectly tailored to your uniques style.</p>
+                    <img class="d-block w-100 landscapeImg" src="images/home/interior-design.jpg" alt="interior-design">
+                    <p class="serviceText text-white">
+                        Transfer your vision of a dream home into reality with personalized design assistance 
+                        and curated products perfectly tailored to your uniques style.
+                    </p>
                 </div>
                 <div class="col-5 serviceImg">
-                    <a href=""><img class="d-block w-100 portraitImg" src="images/home/furniture-making.jpg" alt="furniture-pic"></a>
-                    <p class="serviceText">Benefit from the wealth of experience our team of woodcraft designers bring to the table</p>
+                    <img class="d-block w-100 portraitImg" src="images/home/furniture-making.jpg" alt="furniture-pic">
+                    <p class="serviceText text-white">Benefit from the wealth of experience our team of woodcraft designers bring to the table</p>
                 </div>
             </div>
             <div class="row ">
-                <div class="col-12">
-                    <a href=""><img class="d-block w-100" src="images/home/mat-supply.png" alt="material supply"></a>
+                <div class="col-12 mt-">
+                    <img class="d-block w-100" src="images/home/mat-supply.png" alt="material supply">
                 </div>
             </div>
         </div>
@@ -86,27 +89,35 @@
     </section>
     <section class="review">
         <h1>CLIENT <br> &nbsp REVIEWS</h1><br>
-        <div class="row ">
-            <div class="col-4">
-                <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                <div class="h-100 ">
-                <!-- <img class="reviewImg" src="images/home/DisplayPicure.jpg" alt="client 1"> -->
-                <span class="mb-0">Chibueze Chidolue</span>
+        <div class="row text">
+            <div class="col-md-4 col-12 clientReview">
+                <p class="mb-0">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget 
+                    dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, 
+                    nascetur ridiculus mus.
+                </p>
+                <div class=" mt-2 small">
+                <img class=" reviewImg" src="images/home/DP.jpg" alt="client 1">
+                <span class="small clientName">Chibueze Chidolue</span>
                 </div>
             </div>
-            <div class="col-4">
-                <div class="h-100 ">
-                <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                <!-- <img class=" reviewImg" src="images/home/DisplayPicure.jpg" alt="Client 2">  -->
-                 <span>Chibueze Chidolue</span>
-                </div>
+            <div class="col-md-4 col-12 clientReview ">
+                <p class="mb-0">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget 
+                    dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, 
+                    nascetur ridiculus mus.
+                </p>
+                <div class="mt-2 small">
+                <img class="reviewImg" src="images/home/DP.jpg" alt="Client 2"> 
+                 <span class="small clientName">Orji Chidera</span>
+                 </div>
             </div>
-            <div class="col-4">
-                <div class="h-100 ">
+            <div class="col-md-4 col-12 clientReview">
                 <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                <!-- <img class=" reviewImg" src="images/home/DisplayPicure.jpg" alt="Clien 3"> -->
-                 <span>Chibueze Chidolue</span>
-                </div>
+                <div class="mt-2 small">
+                <img class=" reviewImg" src="images/home/DP.jpg" alt="Clien 3">
+                 <span class="small clientName">Nathaniel Akobundu</span>
+                 </div>
             </div>
         </div>
     </section>

@@ -3,8 +3,16 @@ body{
     background-color: black;
     margin-top: 1%;
 }
+
+
 #header{
     margin: 0 5%;
+    /* position: fixed; */
+    /* width: 90%; */
+    /* z-index: 5; */
+    /* top: 0; */
+    /* background-color: black; */
+    /* transition: 0.5s */
 }
 
 .navColor{
@@ -14,6 +22,9 @@ body{
 }
 .navColor:hover{
     color: grey;
+}
+.navColor:focus{
+  color:white;
 }
 
 .navButton{
@@ -31,11 +42,25 @@ body{
     margin-left: 5%;
     margin-right: 5%;
 }
-.carouselBtn{
+.carouselBtn1{
     position: absolute;
     top: 75%;
     left: 4%;
 }
+
+.carouselBtn2{
+  position: absolute;
+  top: 75%;
+  left: 30%;
+}
+
+.carouselBtn3{
+  position: absolute;
+  top: 75%;
+  left: 30%;
+}
+
+
 
 .letsTalkBtn{
     /* background-color: #FFFFFF; */
@@ -132,16 +157,35 @@ padding: 5%;
 /* margin-bottom: 8%; */
 height: fit-content;
 }
+.reviewCover{
+  height: 100px;
+}
 
 .reviewImg{
-    /* border-radius: 50; */
-    clip-path: circle();
-    height: 5%;
+    border-radius: 50%;
+    /* clip-path: circle(); */
+    height: 40px;
+    /* margin-top: 2%; */
+    margin-left: 25%;
     
 }
 
+
 .reviewProf{
     text-align: center
+}
+
+.clientReview{
+  margin-bottom: 20px;
+  /* color: burlywood; */
+}
+
+/* .clientName{
+  color: white;
+} */
+
+.controlText{
+  font-size: small;
 }
 
 
@@ -227,6 +271,37 @@ height: fit-content;
   margin: 25% 0;
 }
 
+
+@media only screen and (min-width: 992px) {
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+  .serviceText{
+    font-size:xx-small;
+  }
+
+  .clientReview{
+    font-size: small;
+  }
+
+  .letsTalkBtn{
+    /* background-color: #FFFFFF; */
+    /* background-color:white;
+    color: black; */
+    font-size: xx-small;
+    padding: 4px 8px;
+  }
+
+  .viewServiceBtn{
+    font-size: xx-small;
+    padding: 4px 8px;
+  }
+
+}
 
 /* @media only screen and (min-width: 992px) {
     #mainNav {
