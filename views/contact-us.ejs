@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<title> ContactUs @ <%= locals.companyName %></title>
 <%- include('header.html') %>
+
 <body>
 <!-- Page Header -->
 <section class="contactUs">
@@ -32,7 +34,7 @@
           <div class="control-group">
             <div class="form-group floating-label-form-group controls">
               <label>Name</label>
-              <input type="text" name="name" class="form-control" placeholder="Your Name" id="name" required data-validation-required-message="Please enter your name.">
+              <input type="text" name="name" class="form-control" placeholder="Full Name" id="name" required data-validation-required-message="Please enter your name.">
               <p class="help-block text-danger"></p>
             </div>
           </div>
@@ -70,9 +72,9 @@
     <div class=" col-md-6 col-10 ps-0">
         <div class="mail-us ">
             <h3>You can also contact us via: </h3>
-            <p>&nbsp&nbsp&nbsp&nbsp<i class=" social-icon fas fa-envelope"></i> Email: cdera.services@gmail.com</p>
-            <p>&nbsp&nbsp&nbsp&nbsp<i class="fa fa-phone" aria-hidden="true"></i> Phone: +2347062690661 </p>
-            <p>&nbsp&nbsp&nbsp&nbsp<i class="fa fa-map-marker"></i> Address: 107 Old Aba Rd, Rumuobiakani, River State </p>
+            <p>&nbsp&nbsp&nbsp&nbsp<i class=" social-icon fas fa-envelope"></i> Email: <%= locals.company.email %></p>
+            <p>&nbsp&nbsp&nbsp&nbsp<i class="fa fa-phone" aria-hidden="true"></i> Phone: <%= locals.company.phone %> </p>
+            <p>&nbsp&nbsp&nbsp&nbsp<i class="fa fa-map-marker"></i> Address: <%= locals.company.address %> </p>
         </div>
     </div>
 
@@ -81,13 +83,13 @@
             <h3 class="linkTitle">socials</h3>
                 <div class="footerIcons">
                     <div class="facebook-icon footerIcon">
-                    <a class="footerLink socialsLink" href="#"><i class="fa-brands fa-facebook-f fa-lg"></i></a>
+                    <a class="footerLink socialsLink" href="<%= locals.company.socials.facebook %>"><i class="fa-brands fa-facebook-f fa-lg"></i></a>
                     </div>
                     <div class="instagram-icon footerIcon">
-                    <a class="footerLink socialsLink" href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                    <a class="footerLink socialsLink" href="<%= locals.company.socials.instagram %>"><i class="fa-brands fa-instagram fa-lg"></i></a>
                     </div>
                     <div class="whatsapp-icon footerIcon">
-                    <a class="footerLink socialsLink" href="#"><i class="fa-brands fa-whatsapp fa-lg"></i></a>
+                    <a class="footerLink socialsLink" href="<%= locals.company.socials.whatsapp %>"><i class="fa-brands fa-whatsapp fa-lg"></i></a>
                     </div>
                 </div>
             </div>

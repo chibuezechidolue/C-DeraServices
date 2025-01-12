@@ -18,9 +18,29 @@ const port = process.env.PORT || 3000;
 app.set('views', '../views');
 // app.set('view engine', 'html');
 
+function  myMiddleware(req,res,next){
+    // const domainName = req.headers.host;
+    // const domainName = req.hostname;
+    const domainName = "cderaservices.com"
+
+     let parentDomain=domainName=="cderaservices.com" ? true : false
+     res.locals={
+        "parentDomain":parentDomain,
+        "company":{
+            "name": parentDomain ? "C'dera Services" : "ChidaveAstro Services",
+            "email": parentDomain ? "cdera.services@gmail.com" : "chidaveastro@gmail.com",
+            "phone": parentDomain ? "+2347062690661" : "+2347062690661",
+            "address": parentDomain ? "107 Old Aba Rd, Rumuobiakani, River State" : "107 Old Aba Rd, Rumuobiakani, River State",
+            "socials": parentDomain ? {"facebook":"","instagram":"","whatsapp":""} : {"facebook":"","instagram":"","whatsapp":""}
+        }
+     }
+    next();
+}
+
 // middlewares//
 app.use(express.static("../public"));
 app.use(express.urlencoded({extended:true}));
+app.use(myMiddleware);
 
 
 app.get("/",(req,res)=>{
