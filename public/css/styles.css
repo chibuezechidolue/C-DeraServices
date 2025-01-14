@@ -68,6 +68,12 @@ body{
     color: black;
 }
 
+.letsTalkBtn:hover{
+  /* background-color: #28C354; */
+  background-color: grey;
+  color: black;
+}
+
 
 
 /* Footer Section */
@@ -271,6 +277,10 @@ height: fit-content;
   margin: 25% 0;
 }
 
+.logoImg{
+  height: 33px;
+}
+
 
 @media only screen and (min-width: 992px) {
 
@@ -284,6 +294,10 @@ height: fit-content;
     font-size:xx-small;
   }
 
+  .serviceHeading{
+    font-size: small;
+  }
+
   .clientReview{
     font-size: small;
   }
@@ -295,10 +309,15 @@ height: fit-content;
     font-size: xx-small;
     padding: 4px 8px;
   }
+ 
 
   .viewServiceBtn{
     font-size: xx-small;
     padding: 4px 8px;
+  }
+
+  .logoImg{
+    height: 23px;
   }
 
 }

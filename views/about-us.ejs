@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-    <title> About Us @ <%= locals.companyName %></title>
+    <title> About Us @ <%= locals.company.name %></title>
 <%- include('header.html') %>
 <body>
 <section class="about">
     <div class="row justify-content-center aboutHeader ">
         <div class="col-10">
-    <img class="w-100 h-100 aboutHeading" src="images/about/DeraServices.png" alt="">
+    <img class="w-100 h-100 aboutHeading" src="images/about/<%= locals.parentDomain ? "cderaservices.png" : "chidaveastro.png" %>" alt="HeadingImage">
     </div></div>
     <div class="description">
     <div class="row justify-content-center ">
@@ -47,7 +47,7 @@
     <div class="statements">
         <div class="row justify-content-center ">
             <div class="col-md-9 col-11">
-        <img class="w-100 aboutHeading" src="images/about/2.png" alt=""> 
+        <img class="w-100 aboutHeading" src="images/about/statements.png" alt=""> 
     </div></div>
     </div>
 

@@ -3,20 +3,20 @@ import 'dotenv/config';
 
  // Send Email ///
 
- export function sendEmail(subject,content,options){
+ export function sendEmail({subject,content,emailUser,emailPass}){
     var transporter = nodemailer.createTransport({
         port: 465,               // true for 465, false for other ports
         host: "smtp.gmail.com",
            auth: {
-                user: process.env.EMAIL_USERNAME,
-                pass: process.env.EMAIL_PASSWORD,
+                user: emailUser,
+                pass: emailPass,
              },
         secure: true,
         });
 
  var mailOptions = {
-    from: process.env.EMAIL_USERNAME,  // sender address
-        to: process.env.EMAIL_USERNAME,   // list of receivers
+    from: emailUser,  // sender address
+        to: emailUser,   // list of receivers
         subject: subject,
         text: content,
         // html: '<b>Hey there! </b> <br> This is our first message sent with Nodemailer<br/>',

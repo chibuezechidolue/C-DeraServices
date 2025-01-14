@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title> ContactUs @ <%= locals.companyName %></title>
+<title> ContactUs @ <%= locals.company.name %></title>
 <%- include('header.html') %>
 
 <body>
@@ -72,9 +72,9 @@
     <div class=" col-md-6 col-10 ps-0">
         <div class="mail-us ">
             <h3>You can also contact us via: </h3>
-            <p>&nbsp&nbsp&nbsp&nbsp<i class=" social-icon fas fa-envelope"></i> Email: <%= locals.company.email %></p>
-            <p>&nbsp&nbsp&nbsp&nbsp<i class="fa fa-phone" aria-hidden="true"></i> Phone: <%= locals.company.phone %> </p>
-            <p>&nbsp&nbsp&nbsp&nbsp<i class="fa fa-map-marker"></i> Address: <%= locals.company.address %> </p>
+            <p><i class=" social-icon fas fa-envelope"></i> Email: <%= locals.company.email %></p>
+            <p><i class="fa fa-phone" aria-hidden="true"></i> Phone: <%= locals.company.phone %> </p>
+            <p><i class="fa fa-map-marker"></i> Address: <%= locals.company.address %> </p>
         </div>
     </div>
 
