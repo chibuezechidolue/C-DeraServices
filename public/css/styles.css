@@ -145,9 +145,7 @@ footer{
     height: 30%;
     /* width: 500px; */
 }
-.landscapeImg{
-    height: 100%;
-}
+
 
 
 
@@ -281,14 +279,34 @@ height: fit-content;
   height: 33px;
 }
 
-
-@media only screen and (min-width: 992px) {
-
+.landscapeImg{
+  height: 350px;
 }
+.portraitImg{
+ height: 300px;
+}
+.bigLandscapeImg{
+  height: 500px;
+}
+
+/* @media only screen and (min-width: 992px) {
+
+} */
 
 
 
 @media only screen and (max-width: 768px) {
+
+
+  .landscapeImg{
+    height: 150px;
+  }
+  .portraitImg{
+   height: 100px;
+  }
+  .bigLandscapeImg{
+    height: 200px;
+  }
 
   .serviceText{
     font-size:xx-small;

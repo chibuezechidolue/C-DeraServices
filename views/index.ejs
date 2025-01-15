@@ -69,14 +69,14 @@
             <div class="serviceDisplay">
             <div class="row ">
                 <div class="col-7 serviceImg">
-                    <img class="d-block w-100 landscapeImg" src="images/home/interior-design.jpg" alt="interior-design">
+                    <img class="d-block w-100 " src="images/home/interior-design.jpg" alt="interior-design">
                     <p class="serviceText text-white">
                         Transfer your vision of a dream home into reality with personalized design assistance 
                         and curated products perfectly tailored to your uniques style.
                     </p>
                 </div>
                 <div class="col-5 serviceImg">
-                    <img class="d-block w-100 portraitImg" src="images/home/furniture-making.jpg" alt="furniture-pic">
+                    <img class="d-block w-100 " src="images/home/furniture-making.jpg" alt="furniture-pic">
                     <p class="serviceText text-white">Benefit from the wealth of experience our team of woodcraft designers bring to the table</p>
                 </div>
             </div>
@@ -92,32 +92,24 @@
         <h1>CLIENT <br> &nbsp REVIEWS</h1><br>
         <div class="row text">
             <div class="col-md-4 col-12 clientReview">
-                <p class="mb-0">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget 
-                    dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, 
-                    nascetur ridiculus mus.
-                </p>
+                <p class="mb-0"><%= locals.reviews.first.review%></p>
                 <div class=" mt-2 small">
-                <img class=" reviewImg" src="images/home/DP.jpg" alt="client 1">
-                <span class="small clientName">Chibueze Chidolue</span>
+                <img class=" reviewImg" src="images/home/reviewAvarter.jpg" alt="client 1">
+                <span class="small clientName"><%= locals.reviews.first.name %></span>
                 </div>
             </div>
             <div class="col-md-4 col-12 clientReview ">
-                <p class="mb-0">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget 
-                    dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, 
-                    nascetur ridiculus mus.
-                </p>
+                <p class="mb-0"><%= locals.reviews.second.review %></p>
                 <div class="mt-2 small">
-                <img class="reviewImg" src="images/home/DP.jpg" alt="Client 2"> 
-                 <span class="small clientName">Orji Chidera</span>
+                <img class="reviewImg" src="images/home/reviewAvarter.jpg" alt="Client 2"> 
+                 <span class="small clientName"><%= locals.reviews.second.name %></span>
                  </div>
             </div>
             <div class="col-md-4 col-12 clientReview">
-                <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                <p class="mb-0"><%= locals.reviews.third.review %></p>
                 <div class="mt-2 small">
-                <img class=" reviewImg" src="images/home/DP.jpg" alt="Clien 3">
-                 <span class="small clientName">Nathaniel Akobundu</span>
+                <img class=" reviewImg" src="images/home/reviewAvarter.jpg" alt="Clien 3">
+                 <span class="small clientName"><%= locals.reviews.third.name %></span>
                  </div>
             </div>
         </div>
