@@ -31,3 +31,38 @@ if(currentPage=="/"){
 }else{
     document.getElementById("services").style.color="#FFCA2C";
 }
+
+
+const videosBtn=document.querySelectorAll('.videoPlay');
+videosBtn.forEach(vid =>{
+    vid.addEventListener("click", (event) => {
+        if (!document.fullscreenElement){
+            vid.requestFullscreen();
+            vid.play();
+        }
+    });
+
+    addEventListener("fullscreenchange", (event) => {
+        if (!document.fullscreenElement){
+            vid.pause()
+            vid.currentTime = 0;
+            vid.load();
+            if (vid){
+
+            }
+        }
+    });
+
+    videosBtn.forEach(vid =>{
+        vid.addEventListener("play", (event) => {
+            if (!document.fullscreenElement){
+                vid.requestFullscreen();
+                vid.play();
+            }
+        });
+    })
+    
+    
+})
+
+

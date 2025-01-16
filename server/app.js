@@ -21,8 +21,8 @@ app.set('views', '../views');
 
 function  myMiddleware(req,res,next){
     // const domainName = req.headers.host;
-    // const domainName = req.hostname;
-    const domainName = "cderaservices.com"
+    const domainName = req.hostname;
+    // const domainName = "cderaservices.com"
 
     let parentDomain=domainName=="cderaservices.com" ? true : false
     res.locals={
