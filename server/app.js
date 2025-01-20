@@ -32,7 +32,7 @@ function  myMiddleware(req,res,next){
             "email": parentDomain ? "cdera.services@gmail.com" : "chidaveastro@gmail.com",
             "phone": parentDomain ? "+2347062690661" : "+2347062690661",
             "address": parentDomain ? "107 Old Aba Rd, Rumuobiakani, River State" : "107 Old Aba Rd, Rumuobiakani, River State",
-            "socials": parentDomain ? {"facebook":"#","instagram":"https://www.instagram.com/cdera.services/?igsh=NTc4MTIwNjQ2YQ%3D%3D","whatsapp":"wa.link/gx8cmw"} : {"facebook":"#","instagram":"https://www.instagram.com/cdera.services/?igsh=NTc4MTIwNjQ2YQ%3D%3D","whatsapp":"https://wa.link/gx8cmw"},
+            "socials": parentDomain ? {"facebook":"#","instagram":"https://www.instagram.com/cdera.services/?igsh=NTc4MTIwNjQ2YQ%3D%3D","whatsapp":"https://wa.link/gx8cmw"} : {"facebook":"#","instagram":"https://www.instagram.com/cdera.services/?igsh=NTc4MTIwNjQ2YQ%3D%3D","whatsapp":"https://wa.link/gx8cmw"},
             "yearIncorporated":parentDomain ? "2019" : "2024",
         }
      }
