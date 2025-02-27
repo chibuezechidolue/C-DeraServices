@@ -269,6 +269,7 @@ height: fit-content;
 
 
 
+
 /* Projects Section */
 
 .coomingSoon{
@@ -339,6 +340,16 @@ height: fit-content;
   }
 
 }
+
+
+@media (min-width: 768px) {
+  /* piping&insulation */
+  .customHero{
+    height: 620px;
+  }
+}
+
+
 
 /* @media only screen and (min-width: 992px) {
     #mainNav {

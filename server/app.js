@@ -97,6 +97,12 @@ app.get("/service/material-supply",(req,res)=>{
     res.render("../views/services/material-supply.ejs");
 })
 
+app.get("/service/piping&insulation",(req,res)=>{
+    res.render("../views/services/piping&insulation.ejs");
+})
+
+
+
 // Projects Routes //
 app.get("/projects",(req,res)=>{
     res.render("../views/projects.ejs")
